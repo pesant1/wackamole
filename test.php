@@ -21,12 +21,12 @@
             die("Connection failed: {mysqli_connect_error()}");
             echo "Connected successfully";
         }
-        $sql = "select * from test;";
+        $sql = "select name, score from test;";
         $result = mysqli_query($conn, $sql);
 
         foreach($result as $row) 
         { 
-            echo "id: {$row["id"]} | name: {$row["name"]} | score: {$row["score"]} <br>";
+            echo "id: name: {$row["name"]} | score: {$row["score"]} <br>";
         }
         mysqli_close($conn);        
     ?>
