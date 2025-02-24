@@ -27,7 +27,7 @@
         $cntresult = mysqli_query($conn, $dbcnt);
         
         
-        echo $cntresult["total"];
+        echo $cntresult['total'];
         mysqli_close($conn); 
 ?>
 
