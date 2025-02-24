@@ -21,16 +21,10 @@
             echo "Connected successfully";
         }
 
-        $dbcnt = "select count(*) as total from test";
-        $dbtot = mysqli_query($conn, $dbcnt);
+        $countresult = $conn->query("select count(*) as total from test");
+        $countrow = $countresult->fetch_assoc();
+        echo $countrow['total'];
 
-        mysqli_num_rows($dbtot);
-        echo mysqli_free_result($dbtot);
-
-        //$countresult = $conn->query("select count(*) as total from test");
-        //$countrow = $countresult->fetch_assoc();
-        //echo $countrow['total'];
-        //echo $dbtot['total'];
         mysqli_close($conn);        
 ?>
 
