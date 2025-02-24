@@ -24,10 +24,11 @@
             die("Connection failed: {mysqli_connect_error()}");
             echo "Connected successfully";
         }
-        $sql = "select name, score from test;";
+        $sql = "select name, score from test order by score DESC;";
         $result = mysqli_query($conn, $sql);       
 ?>
 </meta http-equiv="refresh" content="5">
+
 <?php
     if($result -> num_rows > 0) 
     { 
@@ -43,11 +44,4 @@
 
 </body>
 </html> 
-
-<!DOCTYPE html>
-<html>
-<head>
-<title>Final Project test sql + php</title>
-</head>
-<body>
 
