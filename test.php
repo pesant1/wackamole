@@ -24,10 +24,8 @@
         $sql = "select * from test;";
         $result = mysqli_query($conn, $sql);
 
-        foreach($result as $row) 
-        { 
-            echo "<option value='{$row['id']}'>{$row['book_name']}</option>\n";
-        }
+        foreach($result as $row) { echo "id: {$row["id"]} | name: {$row["name"]} | score: {$row["score"]}\n";}
+
         mysqli_close($conn);        
     ?>
 
