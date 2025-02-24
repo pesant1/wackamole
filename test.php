@@ -30,7 +30,8 @@
         }
         mysqli_close($conn);        
     ?>
-<br/>
+
+    
 <body style="background-color:gray;">
 
 </body>
