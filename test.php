@@ -28,9 +28,6 @@
         { 
             echo "id: {$row["id"]} | name: {$row["name"]} | score: {$row["score"]}" "<br>";
         }
-        {
-            echo "\n"; 
-        }
         mysqli_close($conn);        
     ?>
 <br/>
