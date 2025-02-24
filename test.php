@@ -3,7 +3,7 @@
 <head>
 <title>Test file</title>
 
-</meta http-equiv="refresh" content="5">
+
 
 </head>
 <body>
@@ -25,14 +25,17 @@
             echo "Connected successfully";
         }
         $sql = "select name, score from test;";
-        $result = mysqli_query($conn, $sql);
+        $result = mysqli_query($conn, $sql);       
+?>
+</meta http-equiv="refresh" content="5">
+<?php
+    foreach($result as $row) 
+    { 
+        echo "name: {$row["name"]} | score: {$row["score"]} <br>";
+    }
+    mysqli_close($conn); 
+?>
 
-        foreach($result as $row) 
-        { 
-            echo "name: {$row["name"]} | score: {$row["score"]} <br>";
-        }
-        mysqli_close($conn);        
-    ?>
 <body style="background-color:gray;">
 
 </body>
