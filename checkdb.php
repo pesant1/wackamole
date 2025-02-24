@@ -28,7 +28,7 @@
         
         foreach($cntresult as $row) 
         { 
-            echo "$cntresult['total']; <br>";
+            echo "{$cntresult['total']}; <br>";
         }
         mysqli_close($conn); 
 ?>
