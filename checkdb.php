@@ -29,7 +29,7 @@
        // $countresult = $conn->query("select count(*) as total from test");
         $countrow = $countresult->fetch_assoc();
         $entrycnt = $countrow['total'];
-        echo $countrow['total'];
+        echo $cntresult['total'];
         mysqli_close($conn); 
 
 
