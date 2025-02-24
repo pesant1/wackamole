@@ -28,9 +28,6 @@
         { 
             echo "<option value='{$row['id']}'>{$row['book_name']}</option>\n";
         }
-        // mysqli_close($conn);
-    ?>        
-
         mysqli_close($conn);        
     ?>
 
