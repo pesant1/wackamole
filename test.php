@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+<style>
+table {
+  border: 1px solid black;
+}
+</style>
 <title>Test file</title>
 
 </head>
