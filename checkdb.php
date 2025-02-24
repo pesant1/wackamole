@@ -6,7 +6,7 @@
 <body>
 
 <h1>Test file to check db</h1>
-
+<body style="background-color:gray;">
 <?php
         $server = "localhost";
         $username = "php";
@@ -33,7 +33,7 @@
         mysqli_close($conn); 
 ?>
 
-<body style="background-color:gray;">
+
 
 </body>
 </html> 
