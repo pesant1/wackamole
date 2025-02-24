@@ -23,20 +23,32 @@
             echo "Connected successfully";
         }
         $sql = "select name, score from test order by score DESC;";
-        $result = mysqli_query($conn, $sql);       
+        $result = mysqli_query($conn, $sql);
+        
+        $countresult = $conn->query("select count(*) as total from test");
+        $countrow = $countresult->fetch_assoc();
+        $entrycnt = $countrow['total'];        
 ?>
-</meta http-equiv="refresh" content="5">
 
-<?php
-    if($result -> num_rows > 0) 
-    { 
-        while($row = $result->fetch_assoc())
-        {
-            echo "name: {$row["name"]} | score: {$row["score"]} <br>";
-        }
-    }
-    mysqli_close($conn); 
-?>
+<table>
+        <?php
+            if($result -> num_rows > 0) 
+            { 
+                while($row = $result->fetch_assoc())
+                {
+                    echo "name: {$row["name"]} | score: {$row["score"]} <br>";
+                }
+            }
+            mysqli_close($conn); 
+        ?>
+</table>
+
+<script>
+        let currententrycnt = <?php echo $countrow['total'];?>
+        function newentry
+
+
+</script>
 
 <body style="background-color:gray;">
 

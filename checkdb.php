@@ -23,6 +23,7 @@
 
         $countresult = $conn->query("select count(*) as total from test");
         $countrow = $countresult->fetch_assoc();
+        $entrycnt = $countrow['total'];
         echo $countrow['total'];
         mysqli_close($conn); 
 ?>
