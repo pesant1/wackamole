@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-<title>Test file</title>
-
+<title>Test file2</title>
 </head>
 <body>
 
-<h1>Test file to display db content</h1>
+<h1>Test file to check db</h1>
 
 <?php
         $server = "localhost";
@@ -22,20 +20,11 @@
             die("Connection failed: {mysqli_connect_error()}");
             echo "Connected successfully";
         }
-        $sql = "select name, score from test order by score DESC;";
-        $result = mysqli_query($conn, $sql);       
-?>
-</meta http-equiv="refresh" content="5">
 
-<?php
-    if($result -> num_rows > 0) 
-    { 
-        while($row = $result->fetch_assoc())
-        {
-            echo "name: {$row["name"]} | score: {$row["score"]} <br>";
-        }
-    }
-    mysqli_close($conn); 
+        $countresult = $conn->query("select count(*) as total from test");
+        $countrow = $countresult->fetch_assoc();
+        echo $countrow['total'];
+        mysqli_close($conn); 
 ?>
 
 <body style="background-color:gray;">
