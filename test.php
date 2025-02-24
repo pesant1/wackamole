@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Final Project test sql + php</title>
+<title>Page Title</title>
 </head>
 <body>
 
-
-
-<body style="background-color:gray;">
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
 
 </body>
 </html> 
