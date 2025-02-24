@@ -20,10 +20,14 @@
             die("Connection failed: {mysqli_connect_error()}");
             echo "Connected successfully";
         }
+        $sql = "select name, score from test order by score DESC;";
+        $dbcnt = "select count(*) as total from test";
+        $result = mysqli_query($conn, $sql);
+        
+        $cntresult = mysql_query($conn, $dbcnt);
+        $countrow = $cntresult->fetch_assoc();
+        $entrycnt = $countrow['total']; 
 
-        $countresult = $conn->query("select count(*) as total from test");
-        $countrow = $countresult->fetch_assoc();
-        $entrycnt = $countrow['total'];
         echo $countrow['total'];
         mysqli_close($conn); 
 ?>
