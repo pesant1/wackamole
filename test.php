@@ -24,16 +24,6 @@
         $sql = "select * from test;";
         $result = mysqli_query($conn, $sql);
 
-        if ($result-> num_rows > 0)
-        {
-            while ($row = $result-> fetch_assoc())
-            {
-                print_r($row);
-                echo "\n"
-            }
-            echo "no data";
-        }
-        
         mysqli_close($conn);        
     ?>
 
