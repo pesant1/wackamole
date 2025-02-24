@@ -24,14 +24,18 @@
         $sql = "select name, score from test order by score DESC;";
         $dbcnt = "select count(*) as total from test";
         $result = mysqli_query($conn, $sql);
-        $cntresult = mysqli_query($conn, $dbcnt)
+        $cntresult = mysqli_query($conn, $dbcnt);
  
-        $countrow = $cntresult->fetch_assoc();
+       // $countresult = $conn->query("select count(*) as total from test");
+        $countrow = $countresult->fetch_assoc();
         $entrycnt = $countrow['total'];
         echo $countrow['total'];
         mysqli_close($conn); 
 
 
+        $countrow = $cntresult->fetch_assoc();
+        $entrycnt = $countrow['total']; 
+        mysqli_close($conn); 
 ?>
 
 <body style="background-color:gray;">
