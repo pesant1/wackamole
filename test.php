@@ -40,7 +40,7 @@ table {
             { 
                 while($row = $result->fetch_assoc())
                 {
-                    echo "<th>name</th>: {$row["name"]} | score: {$row["score"]} <br>";
+                    echo "<th>name</th> {$row["<td>name</td>"]}<th>score</th> {$row["<td>score</td>"]} <br>";
                 }
             }
             mysqli_close($conn); 
