@@ -31,11 +31,6 @@
         $entrycnt = $countrow['total'];
         echo $cntresult['total'];
         mysqli_close($conn); 
-
-
-        $countrow = $cntresult->fetch_assoc();
-        $entrycnt = $countrow['total']; 
-        mysqli_close($conn); 
 ?>
 
 <body style="background-color:gray;">
