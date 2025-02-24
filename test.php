@@ -26,7 +26,7 @@
 
         foreach($result as $row) 
         { 
-            echo "id: {$row["id"]} | name: {$row["name"]} | score: {$row["score"]}" "<br>";
+            echo "id: {$row["id"]} | name: {$row["name"]} | score: {$row["score"]}";
         }
         mysqli_close($conn);        
     ?>
