@@ -29,9 +29,12 @@
 ?>
 </meta http-equiv="refresh" content="5">
 <?php
-    foreach($result as $row) 
+    if($result -> num_rows > 0) 
     { 
-        echo "name: {$row["name"]} | score: {$row["score"]} <br>";
+        while($row = $result->fetch_assoc())
+        {
+            echo "name: {$row["name"]} | score: {$row["score"]} <br>";
+        }
     }
     mysqli_close($conn); 
 ?>
