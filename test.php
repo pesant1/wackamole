@@ -25,10 +25,10 @@
         $result = mysqli_query($conn, $sql);
 
         foreach($result as $row) { echo "id: {$row["id"]} | name: {$row["name"]} | score: {$row["score"]}\n";}
-<br/>
+
         mysqli_close($conn);        
     ?>
-
+<br/>
 <body style="background-color:gray;">
 
 </body>
