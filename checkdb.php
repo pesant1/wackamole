@@ -26,7 +26,7 @@
         $result = mysqli_query($conn, $sql);
         $cntresult = mysqli_query($conn, $dbcnt);
         
-        foreach($result as $row) 
+        foreach($cntresult as $row) 
         { 
             echo "$cntresult['total']; <br>";
         }
