@@ -2,6 +2,9 @@
 <html>
 <head>
 <title>Test file</title>
+
+</meta http-equiv="refresh" content="5">
+
 </head>
 <body>
 
@@ -30,8 +33,6 @@
         }
         mysqli_close($conn);        
     ?>
-
-    
 <body style="background-color:gray;">
 
 </body>
