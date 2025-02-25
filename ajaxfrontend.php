@@ -6,6 +6,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 </head>
+<body style="background-color:gray;">
 <body>
     <h1>Live Leaderboard</h1>
     <p id="refreshMessage">New entry detected! Please refresh the page.</p>
