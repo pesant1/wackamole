@@ -42,9 +42,11 @@ table, th, td
                 while($row = $result->fetch_assoc())
                 {
                     echo
-                    "<td> 
-                        {$row["name"]} 
-                    </td>
+                    "<tr>
+                        <td> 
+                            {$row["name"]} 
+                        </td>
+                    </tr>
                     <td>
                         {$row["score"]} 
                     </td><br>";
