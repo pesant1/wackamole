@@ -29,11 +29,7 @@ table, th, td
         }
         
         $sql = "select name, score from test order by score DESC;";
-        $result = mysqli_query($conn, $sql);
-        
-//        $countresult = $conn->query("select count(*) as total from test");
-  //      $countrow = $countresult->fetch_assoc();
-    //    $entrycnt = $countrow['total'];        
+        $result = mysqli_query($conn, $sql);       
 ?>
 
 <table>
@@ -61,6 +57,10 @@ table, th, td
         ?>
 </table>
 
+<script>
+        if()
+        {}
+</script> 
 <meta http-equiv="refresh" content="5">
 
 

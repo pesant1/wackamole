@@ -30,7 +30,7 @@
     <script>
         function fetchLeaderboard() {
             $.ajax({
-                url: "fetch_data.php",
+                url: "tstajaxbackend.php",
                 method: "GET",
                 dataType: "json",
                 success: function(data) {
@@ -40,7 +40,7 @@
                     let rank = 1;
                     data.forEach(row => {
                         let name = row.name ? row.name : "<i>Waiting for name...</i>";
-                        $("#leaderboard").append(<tr><td>${rank++}</td><td>${name}</td><td>${row.score}</td></tr>);
+                        $("#board").append(<tr><td>${rank++}</td><td>${name}</td><td>${row.score}</td></tr>);
 
                         if (!row.name) {
                             newEntryDetected = true;
