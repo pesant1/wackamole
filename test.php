@@ -78,7 +78,7 @@ table, th, td
                                      )
                                      .catch(error => console.error('error, error'));
         }
-        setInterval(NewEntry, 5000);
+        setInterval(NewEntry, 1000);
 </script>
 
 <body style="background-color:gray;">
