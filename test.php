@@ -46,7 +46,6 @@ table, th, td
                         <td> 
                             {$row["name"]} 
                         </td>
-                    </tr>
                     <td>
                         {$row["score"]} 
                     </td><br>";
