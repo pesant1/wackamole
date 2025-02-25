@@ -41,14 +41,20 @@ table, th, td
             { 
                 while($row = $result->fetch_assoc())
                 {
+                    "<tr>
+                        <td>Emil</td>
+                        <td>Tobias</td>
+                        <td>Linus</td>
+                    </tr>"
                     echo
                     "<tr>
                         <td> 
                             {$row["name"]} 
                         </td>
-                    <td>
-                        {$row["score"]} 
-                    </td><br>";
+                        <td>
+                            {$row["score"]} 
+                        </td>
+                    <br>";
                 }
             }
             mysqli_close($conn); 
