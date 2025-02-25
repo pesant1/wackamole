@@ -27,6 +27,7 @@ table, th, td
             die("Connection failed: {mysqli_connect_error()}");
             echo "Connected successfully";
         }
+        
         $sql = "select name, score from test order by score DESC;";
         $result = mysqli_query($conn, $sql);
         
@@ -65,10 +66,19 @@ table, th, td
         function newentry()
         {
             fetch('checkdb.php')
-                                .then(response)
+                                .then(response => response.text())
+                                .then(
+                                        {
+                                            let newcnt = parseInt(data);
+                                            if (newcnt > entrycnt)
+                                            {
+                                                document.getElementById('NewEntry').style display = 'block';
+                                            }
+                                        }
+                                     )
+                                     .catch(error => console.error('error, error'));
         }
-
-
+        setInterval(NewEntry, 5000);
 </script>
 
 <body style="background-color:gray;">
