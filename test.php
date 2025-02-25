@@ -11,7 +11,7 @@ table, th, td
 
 </head>
 <body>
-
+<body style="background-color:gray;">
 <h1>Test file to display db content</h1>
 
 <?php
@@ -61,27 +61,13 @@ table, th, td
         ?>
 </table>
 
+<meta http-equiv="refresh" content="2">
+
 <script>
-        let currententrycnt = <?php echo $countrow['total'];?>
-        function newentry()
-        {
-            fetch('checkdb.php')
-                                .then(response => response.text())
-                                .then(
-                                        {
-                                            let newcnt = parseInt(data);
-                                            if (newcnt > entrycnt)
-                                            {
-                                                document.getElementById('NewEntry').style display = 'block';
-                                            }
-                                        }
-                                     )
-                                     .catch(error => console.error('error, error'));
-        }
-        setInterval(NewEntry, 1000);
+        
 </script>
 
-<body style="background-color:gray;">
+
 
 </body>
 </html> 
