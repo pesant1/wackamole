@@ -36,11 +36,10 @@ table, th, td
 ?>
 
 <table>
-                    "<tr>
-                        <td>Emil</td>
-                        <td>Tobias</td>
-                        <td>Linus</td>
-                    </tr>"    
+        "<tr>
+            <td>Name</td>
+            <td>Score</td>
+        </tr>"    
         <?php
             if($result -> num_rows > 0) 
             { 
