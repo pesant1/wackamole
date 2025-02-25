@@ -42,6 +42,7 @@ table, th, td
                 while($row = $result->fetch_assoc())
                 {
                     echo
+                        {$column['bob']}
                     "<tr><td> 
                         {$row["name"]} 
                     </td><td>
@@ -55,7 +56,11 @@ table, th, td
 
 <script>
         let currententrycnt = <?php echo $countrow['total'];?>
-        function newentry
+        function newentry()
+        {
+            fetch('checkdb.php')
+                                .then(response)
+        }
 
 
 </script>
