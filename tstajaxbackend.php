@@ -1,12 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-table, th, td 
-{
-  border: 1px solid black;
-}
-</style>
+
 <title>Test file3</title>
 
 </head>
