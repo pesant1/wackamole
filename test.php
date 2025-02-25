@@ -42,7 +42,7 @@ table, th, td
                 while($row = $result->fetch_assoc())
                 {
                     echo
-                        {$column['bob']}
+                        {name}
                     "<tr><td> 
                         {$row["name"]} 
                     </td><td>
