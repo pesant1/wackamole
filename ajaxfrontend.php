@@ -4,14 +4,7 @@
     <meta charset="UTF-8">
     <title>Live Leaderboard</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <style>
-        body { font-family: Arial, sans-serif; text-align: center; }
-        table { width: 50%; margin: auto; border-collapse: collapse; }
-        th, td { padding: 10px; border: 1px solid #ddd; }
-        th { background-color: #f4f4f4; }
-        tr:nth-child(even) { background-color: #f9f9f9; }
-        #refreshMessage { color: red; font-weight: bold; display: none; }
-    </style>
+
 </head>
 <body>
     <h1>Live Leaderboard</h1>
