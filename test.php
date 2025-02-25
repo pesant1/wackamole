@@ -42,7 +42,6 @@ table, th, td
                 while($row = $result->fetch_assoc())
                 {
                     echo
-                        {name}
                     "<tr><td> 
                         {$row["name"]} 
                     </td><td>
