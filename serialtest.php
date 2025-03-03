@@ -15,7 +15,7 @@
         $fp = fopen("/dev/ttyUSB0", "w+");
 
         $datasend = "Goodbye World\n";
-        fwrite($fp, $daasend);
+        fwrite($fp, $datasend);
 
         fclose($fp);
 ?>
