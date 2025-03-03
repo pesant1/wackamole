@@ -10,11 +10,11 @@
 <h1>Test file to send serial from pi to avr</h1>
 
 <?php
-        exec("mode /dev/ttyUSB0 BAUD=2400 PARITY=N data=8 stop=1 xon=off");
+        exec("m/usr/bin/stty -F /dev/ttyUSB0 BAUD=2400 PARITY=N data=8 stop=1 xon=off");
         
         $fp = fopen("/dev/ttyUSB0", "w+");
 
-        $datasend = "Goodbye World\n";
+        $datasend = "1Goodbye World0";
         fwrite($fp, $datasend);
 
         fclose($fp);
