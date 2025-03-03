@@ -11,10 +11,10 @@
 
 <?php
         $serialPort = "/dev/ttyUSB0"
-        $baudrate = "2400"  
+        //$baudrate = "2400"  
         
         $fp = $fopen($serialPort, "w+");
-        exec("ssty -F $serialPort $baudrate cs8 -cstopb -parenb");
+        exec("ssty -F $serialPort 2400 cs8 -cstopb -parenb");
 
         $datasend = "Goodbye World\n";
         fwrite($fp, $daasend);
