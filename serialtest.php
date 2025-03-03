@@ -10,11 +10,9 @@
 <h1>Test file to send serial from pi to avr</h1>
 
 <?php
-        $serialPort = "/dev/ttyUSB0"
-        //$baudrate = "2400"  
+        exec("mode /dev/ttyUSB0 BAUD=2400 PARITY=N data=8 stop=1 xon=off");
         
-        $fp = $fopen($serialPort, "w+");
-        exec("ssty -F $serialPort 2400 cs8 -cstopb -parenb");
+        $fp = fopen("/dev/ttyUSB0", "w+");
 
         $datasend = "Goodbye World\n";
         fwrite($fp, $daasend);
