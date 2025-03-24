@@ -37,7 +37,7 @@ table, th, td
                         $conn = query($why);            
                 }
         }
-        $fclose($fp)
+        $fclose($fp);
         mysqli_close($conn); 
 ?>
 
