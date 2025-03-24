@@ -1,21 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-table, th, td 
-{
-  border: 1px solid black;
-}
-</style>
-<title>Test file</title>
-
-</head>
-<body>
-<body style="background-color:gray;">
-<h1>Test file to display db content</h1>
-
-
-
 <?php
         $bluetooth = "/dev/rfcomm0";
         $server = "localhost";
@@ -43,8 +25,3 @@ table, th, td
         $fclose($fp);
         mysqli_close($conn); 
 ?>
-
-
-</body>
-</html> 
-
