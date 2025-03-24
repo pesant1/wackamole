@@ -35,7 +35,7 @@ table, th, td
                 $data = fgets($fp);
                 if($data)
                 {
-                        $data = trim($data);
+                        //$data = trim($data);
                         $sql = "INSERT INTO test (name, score) VALUES ('NULLY', $data);";            
                         $result = mysqli_query($conn, $sql);                                    
                 }
