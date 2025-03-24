@@ -37,7 +37,7 @@ table, th, td
                 {
                         $data = trim($data);
                         $sql = "INSERT INTO test (name, score) VALUES ('garbage', $data);";            
-                        $result = mysqli_query($conn, $sql);                                     
+                        $result = mysqli_query($conn, $sql)                                    
                 }
         }
         $fclose($fp);
