@@ -33,8 +33,8 @@ table, th, td
                 if($data)
                 {
                         $data = trim($data);
-                        $why = "INSERT INTO test (name, score) VALUES ('NULLY', $data);";            
-                        $conn -> query($why);            
+                        $sql = "INSERT INTO test (name, score) VALUES ('NULLY', $data);";            
+                        $result = mysqli_query($conn, $sql);                                     
                 }
         }
         $fclose($fp);
