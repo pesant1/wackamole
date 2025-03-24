@@ -15,7 +15,7 @@ table, th, td
 <h1>Test file to display db content</h1>
 
 <?php
-        $bluetooth = "/dev/rfcomm0"
+        $bluetooth = "/dev/rfcomm0";
         $server = "localhost";
         $username = "php";
         $password = "php1";
