@@ -1,23 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-<title>Test serial txd file</title>
+<style>
+table, th, td 
+{
+  border: 1px solid black;
+}
+</style>
+<title>Test file</title>
 
 </head>
 <body>
 <body style="background-color:gray;">
-<h1>Test file to send serial from pi to avr</h1>
+<h1>Test file to display db content</h1>
 
 <?php
-        exec("/usr/bin/stty -F /dev/ttyUSB0 2400 cs8 -parenb -cstopb");
-        
-        $fp = fopen("/dev/ttyUSB0", "w+");
+        $bluetooth = "/dev/rfcomm0"
+        $server = "localhost";
+        $username = "php";
+        $password = "php1";
+        $database = "finalproject";
+        $conn = mysqli_connect($server, $username, $password, $database);
 
-        $datasend = "1Goodbye World0";
-        fwrite($fp, $datasend);
-
-        fclose($fp);
+        $fp = fopen($bluetooth, "r");
+        if (!$fp) 
+        {
+                die("Not open");
+        }
+        while(true)
+        {
+                $data = fgets($fp);
+                if($data)
+                {
+                        $data = trim($data);
+                        $why = "INSERT INTO test (Name, Score) VALUES ("NULL", $data)";            
+                        $conn = query($why);            
+                }
+        }
+        $fclose($fp)
+        mysqli_close($conn); 
 ?>
 
 
