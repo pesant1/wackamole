@@ -19,7 +19,7 @@
                 {
                         $data = trim($data);
                         //$sql = "INSERT INTO test (name, score) VALUES ('NULLY', $data);";            
-                        $result = mysqli_query($conn, "INSERT INTO test (name, score) VALUES ('NULLY', $data);";);                                    
+                        $result = mysqli_query($conn, "INSERT INTO test (name, score) VALUES ('NULLY', $data);");                                    
                 }
         }
         $fclose($fp);
