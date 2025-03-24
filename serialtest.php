@@ -23,8 +23,6 @@ table, th, td
         $password = "php1";
         $database = "finalproject";
         $conn = mysqli_connect($server, $username, $password, $database);
-        
-        $name = 'NULLY';
 
         $fp = fopen($bluetooth, "r");
         if (!$fp) 
@@ -37,7 +35,7 @@ table, th, td
                 if($data)
                 {
                         $data = trim($data);
-                        $sql = "INSERT INTO test (name, score) VALUES ('NULLY', $data);";            
+                        $sql = "INSERT INTO test (name, score) VALUES ("NULLY", $data);";            
                         $result = mysqli_query($conn, $sql);                                     
                 }
         }
