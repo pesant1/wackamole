@@ -34,7 +34,7 @@ table, th, td
                 {
                         $data = trim($data);
                         $why = "INSERT INTO test (name, score) VALUES (NULLY, $data)";            
-                        $conn = query($why);            
+                        $conn -> query($why);            
                 }
         }
         $fclose($fp);
