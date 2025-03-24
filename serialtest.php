@@ -14,6 +14,8 @@ table, th, td
 <body style="background-color:gray;">
 <h1>Test file to display db content</h1>
 
+
+
 <?php
         $bluetooth = "/dev/rfcomm0";
         $server = "localhost";
@@ -21,6 +23,8 @@ table, th, td
         $password = "php1";
         $database = "finalproject";
         $conn = mysqli_connect($server, $username, $password, $database);
+        
+        $name = 'NULLY';
 
         $fp = fopen($bluetooth, "r");
         if (!$fp) 
@@ -33,8 +37,9 @@ table, th, td
                 if($data)
                 {
                         $data = trim($data);
-                        $sql = "INSERT INTO test (name, score) VALUES ('NULLY', $data);";            
+                        //$sql = "INSERT INTO test (name, score) VALUES ('NULLY', $data);";            
                         $result = mysqli_query($conn, $sql);                                     
+                        $result = mysqli_query($conn, "INSERT INTO test (name, score) VALUES (?, ?)", [$name, $data]); 
                 }
         }
         $fclose($fp);
