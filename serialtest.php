@@ -33,7 +33,7 @@ table, th, td
                 if($data)
                 {
                         $data = trim($data);
-                        $why = "INSERT INTO test (Name, Score) VALUES ("NULL", $data)";            
+                        $why = "INSERT INTO test (Name, Score) VALUES ("NULLY", $data)";            
                         $conn = query($why);            
                 }
         }
