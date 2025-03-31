@@ -13,7 +13,7 @@
         {
                 die("Not open");
         }
-        ob_start();
+        //ob_start();
 
         while(true)
         {
