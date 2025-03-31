@@ -31,5 +31,5 @@
         }
         $fclose($fp);
         mysqli_close($conn); 
-        exit(0);
 ?>
+        exit(0);
