@@ -17,7 +17,7 @@
         while(true)
         {
                 $data = fread($fp, 1);
-                $ascii = ord($data);
+                $ascii = hexdec($data);
                 if($data)
                 {
                         $data = trim($data);
