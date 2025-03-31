@@ -19,7 +19,7 @@
         {
                // $data = fread($fp);
                ob_start();
-                $data = fgets($fp, 4);
+                $data = fgets($fp);
                 $data = ob_get_clean();
                 //$ascii = hexdec($data);
                 
