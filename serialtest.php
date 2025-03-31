@@ -13,11 +13,12 @@
         {
                 die("Not open");
         }
-        
+        ob_start();
+
         while(true)
         {
                // $data = fread($fp, 3);
-                $data = fgets($fp);
+                $data = fgets($fp, 3);
                 $ascii = hexdec($data);
                 
 
