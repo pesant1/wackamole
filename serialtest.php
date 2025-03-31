@@ -18,15 +18,15 @@
         while(true)
         {
                 $data = fread($fp, 4);
-                $data2 = strval($data)
+                $data = strval($data)
                 //$data = fgets($fp);
                 //$ascii = hexdec($data);
                 
 
-                if($data2)
+                if($data)
                 {
-                        $data2 = trim($data2);
-                        $sql = "INSERT INTO test (name, score) VALUES ('NULLY', $data2);";            
+                        $data = trim($data);
+                        $sql = "INSERT INTO test (name, score) VALUES ('NULLY', $data);";            
                         $result = mysqli_query($conn, $sql);                                    
                 }
         }
