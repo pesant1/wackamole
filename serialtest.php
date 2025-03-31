@@ -17,7 +17,7 @@
 
         while(true)
         {
-                //$data = fread($fp, 4);
+                $data = fread($fp, 4);
                 //$data = fgets($fp);
                 //$ascii = hexdec($data);
                 
