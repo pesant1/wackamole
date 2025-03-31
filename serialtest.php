@@ -20,7 +20,7 @@
                 $data = fread($fp, 4);
                // $data = fgets($fp, 4);
 
-                $ascii = hexdec($data);
+                //$ascii = hexdec($data);
                 
 
                 if($data)
