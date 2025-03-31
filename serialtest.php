@@ -17,10 +17,10 @@
         while(true)
         {
                 $data = fread($fp, 1);
-                $ascii = hexdec($data);
+                $ascii = chr($data);
                 if($data)
                 {
-                        $data = trim($data);
+                //        $data = trim($data);
                         $sql = "INSERT INTO test (name, score) VALUES ('NULLY', $ascii);";            
                         $result = mysqli_query($conn, $sql);                                    
                 }
