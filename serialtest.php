@@ -19,14 +19,14 @@
         {
                 $data = fread($fp, 4);
                // $data = fgets($fp, 4);
-
+                
                 //$ascii = hexdec($data);
                 
 
                 if($data)
                 {
                         $data = trim($data);
-                        $sql = "INSERT INTO test (name, score) VALUES ('NULLY', $ascii);";            
+                        $sql = "INSERT INTO test (name, score) VALUES ('NULLY', $data);";            
                         $result = mysqli_query($conn, $sql);                                    
                 }
         }
