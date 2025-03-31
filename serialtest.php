@@ -26,10 +26,11 @@
                 {
                         $data = trim($data);
                         $sql = "INSERT INTO test (name, score) VALUES ('NULLY', $data);";            
-                        $result = mysqli_query($conn, $sql);                                    
+                        $result = mysqli_query($conn, $sql); 
+                        break;                                   
                 }
         }
         $fclose($fp);
         mysqli_close($conn); 
-        break;
+        
 ?>
