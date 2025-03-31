@@ -16,11 +16,12 @@
         
         while(true)
         {
-                $data = fgets($fp);
+                $data = fread($fp, 1);
+                $ascii = ord($data);
                 if($data)
                 {
                         $data = trim($data);
-                        $sql = "INSERT INTO test (name, score) VALUES ('NULLY', $data);";            
+                        $sql = "INSERT INTO test (name, score) VALUES ('NULLY', $ascii);";            
                         $result = mysqli_query($conn, $sql);                                    
                 }
         }
