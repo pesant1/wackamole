@@ -23,9 +23,9 @@
                 //$ascii = hexdec($data);
                 
 
-                if($data)
+                if($data2)
                 {
-                        $data = trim($data);
+                        $data2 = trim($data2);
                         $sql = "INSERT INTO test (name, score) VALUES ('NULLY', $data2);";            
                         $result = mysqli_query($conn, $sql);                                    
                 }
