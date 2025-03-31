@@ -18,8 +18,9 @@
         while(true)
         {
                // $data = fread($fp);
-                $data = fgets($fp, 3);
-                
+               ob_start();
+                $data = fgets($fp, 4);
+                $data = ob_get_clean();
                 //$ascii = hexdec($data);
                 
 
