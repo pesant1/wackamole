@@ -16,8 +16,10 @@
         
         while(true)
         {
-                $data = fread($fp, 1);
+                $data = fread($fp, 3);
                 $ascii = hexdec($data);
+                
+
                 if($data)
                 {
                         $data = trim($data);
