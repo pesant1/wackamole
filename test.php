@@ -61,7 +61,7 @@ table, td, th {
                             {$row["time"]} 
                             {$row["zone"]} 
                         </td>                        
-                    ;
+                    ";
                 }
             } 
             mysqli_close($conn);    
