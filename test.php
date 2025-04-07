@@ -28,14 +28,17 @@ table, th, td
             echo "Connected successfully";
         }
         
-        $sql = "SELECT name, score FROM test ORDER BY score DESC;";
+        //$sql = "SELECT * FROM test ORDER BY score DESC;";
+        $sql = "SELECT * FROM test2 ORDER BY score DESC;";
         $result = mysqli_query($conn, $sql);       
 ?>
 
 <table>
         <tr>
-            <td>Name</td>
+            <th>Name</th>
             <td>Score</td>
+            <td>Time</td>
+
         </tr>   
         <?php
             if($result -> num_rows > 0) 
@@ -50,19 +53,20 @@ table, th, td
                         <td>
                             {$row["score"]} 
                         </td>
+                        <td>
+                            {$row["month"]} 
+                            {$row["day"]} 
+                            {$row["time"]} 
+                            {$row["zone"]} 
+                        </td>                        
                     <br>";
                 }
-            }
-            mysqli_close($conn); 
+            } 
+            mysqli_close($conn);    
         ?>
 </table>
 
-<script>
-        if()
-        {}
-</script> 
 <meta http-equiv="refresh" content="5">
-
 
 </body>
 </html> 
