@@ -34,9 +34,9 @@ table, th, td
 
 <table>
         <tr>
-            <td>Name</td>
-            <td>Score</td>
-            <td>Time</td>
+            <th>Name</th>
+            <th>Score</th>
+            <th>Time</th>
 
         </tr>   
         <?php
@@ -55,7 +55,6 @@ table, th, td
                         <td>
                             {$row["month"]} 
                             {$row["day"]} 
-                            |
                             {$row["time"]} 
                             {$row["zone"]} 
                         </td>                        
