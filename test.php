@@ -52,10 +52,16 @@ table, th, td
                         </td>
                     <br>";
                 }
-            }
-            mysqli_close($conn); 
+            } 
         ?>
 </table>
+
+
+<?php
+    $sql = "SELECT name, from test where name='NULLY';";
+    
+    mysqli_close($conn);
+?>
 
 <script>
         if()

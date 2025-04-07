@@ -13,7 +13,6 @@
         {
                 die("Not open");
         }
-        //ob_start();
 
         while(true)
         {
@@ -27,6 +26,8 @@
                         $result = mysqli_query($conn, $sql);                                
                 }
         }
+
+        
         $fclose($fp);
         mysqli_close($conn); 
         exit(0);
