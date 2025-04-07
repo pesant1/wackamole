@@ -28,7 +28,7 @@ table, th, td
             echo "Connected successfully";
         }
         
-        $sql = "SELECT name, score FROM test ORDER BY score DESC;";
+        $sql = "SELECT name, score FROM test2 ORDER BY score DESC;";
         $result = mysqli_query($conn, $sql);       
 ?>
 
