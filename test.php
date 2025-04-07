@@ -2,11 +2,9 @@
 <html>
 <head>
 <style>
-
-table, td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 1px;
+table, th, td 
+{
+  border: 1px solid black;
 }
 </style>
 <title>Test file</title>
@@ -14,7 +12,7 @@ table, td, th {
 </head>
 <body>
 <body style="background-color:gray;">
-<h2>Test file to display db content</h2>
+<h1>Test file to display db content</h1>
 
 <?php
         $server = "localhost";
@@ -40,6 +38,7 @@ table, td, th {
             <th>Name</th>
             <th>Score</th>
             <th>Time</th>
+
         </tr>   
         <?php
             if($result -> num_rows > 0) 
