@@ -73,8 +73,7 @@ table, th, td
 
     if($result -> num_rows > 0) 
     { 
-        echo
-            "it works";  
+        <form action="newname.php" method = "post">
     }
     mysqli_close($conn);
 ?>
