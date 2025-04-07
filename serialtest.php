@@ -6,7 +6,7 @@
         $database = "finalproject";
         $conn = mysqli_connect($server, $username, $password, $database);
 
-        date_default_timezone_set('America/Montreal');
+        date_default_timezone_set('America/New_York');
         //$output = shell_exec('sudo rfcomm bind /dev/rfcomm0 98:D3:31:F6:92:6D 1');      
 
         $mo = date("F");
