@@ -73,7 +73,7 @@ table, th, td
 
     if($result)
     {
-        name detected be boop
+     
         mysqli_close($conn);
     }
     
