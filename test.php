@@ -53,7 +53,8 @@ table, th, td
                             {$row["score"]} 
                         </td>
                         <td>
-                            {$row["month""day"]} 
+                            {$row["month"]["day"]} 
+
                         </td>                        
                     <br>";
                 }
