@@ -73,10 +73,21 @@ table, th, td
 
     if($result)
     {
-     
-        mysqli_close($conn);
+        if($result -> num_rows > 0) 
+        { 
+            while($row = $result->fetch_assoc())
+            {
+                echo
+                "<tr>
+                    <td> 
+                        {$row["name"]} 
+                    </td>
+                    </td>                        
+                ";
+            }
+        }
     }
-    
+    mysqli_close($conn);
 ?>
 
 <meta http-equiv="refresh" content="5">
