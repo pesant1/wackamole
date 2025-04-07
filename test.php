@@ -2,9 +2,10 @@
 <html>
 <head>
 <style>
-table, th, td 
-{
-  border: 1px solid black;
+table, td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 1px;
 }
 </style>
 <title>Test file</title>
