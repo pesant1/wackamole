@@ -2,6 +2,7 @@
 <html>
 <head>
 <style>
+
 table, td, th {
   border: 1px solid #dddddd;
   text-align: left;
@@ -13,7 +14,7 @@ table, td, th {
 </head>
 <body>
 <body style="background-color:gray;">
-<h1>Test file to display db content</h1>
+<h2>Test file to display db content</h2>
 
 <?php
         $server = "localhost";
@@ -39,7 +40,6 @@ table, td, th {
             <th>Name</th>
             <th>Score</th>
             <th>Time</th>
-
         </tr>   
         <?php
             if($result -> num_rows > 0) 
@@ -61,7 +61,7 @@ table, td, th {
                             {$row["time"]} 
                             {$row["zone"]} 
                         </td>                        
-                    <br>";
+                    ;
                 }
             } 
             mysqli_close($conn);    
