@@ -59,6 +59,11 @@ table, th, td
 
 <?php
     $sql = "SELECT name, from test where name='NULLY';";
+    $result = mysqli_query($conn, $sql); 
+    if($result)
+    {
+        <h1>Test file to display db content</h1>
+    }
     
     mysqli_close($conn);
 ?>
