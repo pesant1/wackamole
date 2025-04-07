@@ -56,7 +56,7 @@ table, th, td
                         <td>
                             {$row["month"]} 
                             {$row["day"]} 
-                            ||
+                            |
                             {$row["time"]} 
                             {$row["zone"]} 
                         </td>                        
