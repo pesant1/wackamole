@@ -14,16 +14,16 @@
         {
                 die("Not open");
         }
-
+                $mo = date("F");
+                $day = date("j");
+                $time = date("g:i");
+                $zone = date("a");
         while(true)
         {
                 $data = fread($fp, 3);
                 fclose($fp);
                 
-                $mo = date("F");
-                $day = date("j");
-                $time = date("g:i");
-                $zone = date("a");
+
 
                 if($data)
                 {
