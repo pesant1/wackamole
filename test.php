@@ -74,8 +74,9 @@ table, th, td
     if($result)
     {
         name detected be boop
+        mysqli_close($conn);
     }
-    mysqli_close($conn);
+    
 ?>
 
 <meta http-equiv="refresh" content="5">
