@@ -71,21 +71,10 @@ table, th, td
     $sql = "SELECT NAME FROM test2 WHERE NAME='Nully';";
     $result = mysqli_query($conn, $sql);
 
-    if($result)
-    {
-        if($result -> num_rows > 0) 
-        { 
-            while($row = $result->fetch_assoc())
-            {
-                echo
-                "<tr>
-                    <td> 
-                        {$row["name"]} 
-                    </td>
-                    </td>                        
-                ";
-            }
-        }
+    if($result -> num_rows > 0) 
+    { 
+        echo
+            "it works";  
     }
     mysqli_close($conn);
 ?>
