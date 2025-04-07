@@ -62,7 +62,7 @@ table, th, td
     $result = mysqli_query($conn, $sql); 
     if($result)
     {
-        <h1>Test file to display db content</h1>
+ //       <h1>Test file to display db content</h1>
     }
     
     mysqli_close($conn);
