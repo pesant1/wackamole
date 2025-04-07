@@ -28,7 +28,7 @@ table, th, td
             echo "Connected successfully";
         }
         
-        $sql = "SELECT * FROM test2 ORDER BY score DESC;";
+        $sql = "SELECT * FROM test1 ORDER BY score DESC;";
         $result = mysqli_query($conn, $sql);       
 ?>
 
@@ -36,7 +36,7 @@ table, th, td
         <tr>
             <th>Name</th>
             <th>Score</th>
-            <th>Time</th>
+
 
         </tr>   
         <?php
@@ -52,12 +52,7 @@ table, th, td
                         <td>
                             {$row["score"]} 
                         </td>
-                        <td>
-                            {$row["month"]} 
-                            {$row["day"]} 
-                            {$row["time"]} 
-                            {$row["zone"]} 
-                        </td>                        
+                     
                     <br>";
                 }
             } 
