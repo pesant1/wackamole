@@ -36,6 +36,8 @@ table, th, td
         <tr>
             <td>Name</td>
             <td>Score</td>
+            <td>Time</td>
+
         </tr>   
         <?php
             if($result -> num_rows > 0) 
@@ -50,6 +52,9 @@ table, th, td
                         <td>
                             {$row["score"]} 
                         </td>
+                        <td>
+                            {$row["month day time zone"]} 
+                        </td>                        
                     <br>";
                 }
             } 
