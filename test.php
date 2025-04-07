@@ -28,16 +28,14 @@ table, th, td
             echo "Connected successfully";
         }
         
-        $sql = "SELECT * FROM test ORDER BY score DESC;";
+        $sql = "SELECT name, score FROM test ORDER BY score DESC;";
         $result = mysqli_query($conn, $sql);       
 ?>
 
 <table>
         <tr>
-            <th>Name</th>
-            <th>Score</th>
-
-
+            <td>Name</td>
+            <td>Score</td>
         </tr>   
         <?php
             if($result -> num_rows > 0) 
@@ -52,24 +50,12 @@ table, th, td
                         <td>
                             {$row["score"]} 
                         </td>
-                     
                     <br>";
                 }
-            } 
+            }
+            mysqli_close($conn); 
         ?>
 </table>
-
-
-<?php
-    $sql = "SELECT name, from test where name='NULLY';";
-    $result = mysqli_query($conn, $sql); 
-    if($result)
-    {
- //       <h1>Test file to display db content</h1>
-    }
-    
-    mysqli_close($conn);
-?>
 
 <script>
         if()
