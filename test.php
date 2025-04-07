@@ -36,8 +36,8 @@ table, th, td
 <table>
         <tr>
             <th>Name</th>
-            <td>Score</td>
-            <td>Time</td>
+            <th>Score</th>
+            <th>Time</th>
 
         </tr>   
         <?php

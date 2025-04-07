@@ -12,7 +12,7 @@
         $mo = date("F");
         $day = date("j");
         $time = date("g:i");
-        $zone = date("a")
+        $zone = date("a");
 
         $fp = fopen($bluetooth, "r");
         if (!$fp) 
