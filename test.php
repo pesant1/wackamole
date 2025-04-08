@@ -76,16 +76,21 @@ table, th, td
             $nully = "{$row["NAME"]}";
         }
 
-        if( $nully == 'bob')
-        {
-            ;
-        }
+
+        
         mysqli_close($conn);
 ?>
+    <script>
+        if( $nully == 'bob')
+        {
+          <form>
+            <button type="submit" form="nameform" value="Submit">Submit</button> 
+          </form>  
+        }
+        
+    </script>
 
-
-
-<button type="submit" form="nameform" value="Submit">Submit</button>  
+ 
 
 <meta http-equiv="refresh" content="5">
 
