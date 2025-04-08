@@ -79,6 +79,8 @@ table, th, td
         mysqli_close($conn);
 ?>
 
+<form action="newname.php" method = "post">
+
 <meta http-equiv="refresh" content="5">
 
 </body>
