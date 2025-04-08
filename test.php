@@ -92,18 +92,16 @@ table, th, td
             $name = $_POST['fname'];
             if (empty($name)) {
                 $sql = "UPDATE test2 SET name='Anony' where name ='Nully';";
-                unset($_POST)
                 $result = mysqli_query($conn, $sql);
                 
                 
             } else {
                 $sql = "UPDATE test2 SET name='$name' where name ='Nully';";
-                unset($_POST)
                 $result = mysqli_query($conn, $sql);
             }
         }
 
-     header('Location:'.$_SERVER['PHP_SELF']);
+     
     mysqli_close($conn);     
 ?>
 
