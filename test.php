@@ -74,15 +74,11 @@ table, th, td
         if($row = $result->fetch_assoc())
         {
             $nully = "{$row["NAME"]}";
+            if( $nully == 'bob')
+            {
+                ;
+            } 
         }
-        if( $nully == 'bob')
-        {
-          <form method = "post" action = "newname.php">
-          <input type="text" name="name">
-            <input type="submit">
- 
-        } 
-
 ?>
 
 
