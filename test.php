@@ -76,18 +76,18 @@ table, th, td
             $nully = "{$row["NAME"]}";
         }
 
-
-        
         mysqli_close($conn);
+
 ?>
     <script>
         if( $nully == 'bob')
         {
-          <form>
-            <button type="submit" form="nameform" value="Submit">Submit</button> 
-          </form>  
-        }
+          <form method = "post" action "newname.php">
+          <input type="text" name="name">
+        <input type="submit">
         
+          </form>  
+        } 
     </script>
 
  
