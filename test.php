@@ -105,7 +105,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
  
 
-<meta http-equiv="refresh" content="5">
+
 
 </body>
 </html> 
