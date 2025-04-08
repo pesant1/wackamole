@@ -67,7 +67,7 @@ table, th, td
 </table>
 
 <?php
-    $sql = "SELECT NAME FROM test2 WHERE name='bob';";
+    $sql = "SELECT NAME FROM test2 WHERE name='NULLY';";
     $result = mysqli_query($conn, $sql);
         if($row = $result->fetch_assoc())
         {
@@ -75,12 +75,14 @@ table, th, td
         } 
 ?>
 
-<?php if ($nully == "bob") 
+<?php if ($nully == "NULLY") 
     { ?> 
         <p?> New entry detected, put your name? </p>
         <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>"> 
         Name: <input type="text" name="fname">
         <input type="submit">
+        <br>
+        <input type="submit" name="fname">
         </form>
 <?php 
     } ?>
@@ -90,10 +92,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // collect value of input field
     $name = $_POST['fname'];
     if (empty($name)) {
-        $sql = "UPDATE test2 SET name='Anony' where name ='bob';";
+        $sql = "UPDATE test2 SET name='Anony' where name ='Nully';";
         $result = mysqli_query($conn, $sql);
     } else {
-        $sql = "UPDATE test2 SET name='$name' where name ='bob';";
+        $sql = "UPDATE test2 SET name='$name' where name ='Nully';";
         $result = mysqli_query($conn, $sql);
     }
 }
