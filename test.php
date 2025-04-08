@@ -91,14 +91,19 @@ table, th, td
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // collect value of input field
     $name = $_POST['fname'];
-    $nname = $_POST['nname'];
-    if (empty($nname)) {
-        $sql = "UPDATE test2 SET name='Anony' where name ='Nully';";
-        $result = mysqli_query($conn, $sql);
-    } else {
+    if($name)
+    {
         $sql = "UPDATE test2 SET name='$name' where name ='Nully';";
         $result = mysqli_query($conn, $sql);
+        mysqli_close($conn); 
     }
+    $nname = $_POST['nname'];
+    if (empty($nname)) 
+        {
+            $sql = "UPDATE test2 SET name='Anony' where name ='Nully';";
+            $result = mysqli_query($conn, $sql);
+            mysqli_close($conn); 
+        } 
 }
 ?>
 
