@@ -70,12 +70,19 @@ table, th, td
 <?php
     $sql = "SELECT NAME FROM test2 WHERE name='bob';";
     $result = mysqli_query($conn, $sql);
-
         if($row = $result->fetch_assoc())
         {
             $nully = "{$row["NAME"]}";
-        }
+        } 
 ?>
+
+<?php if ($nully == "bob") 
+    { ?> 
+        <form action="newname.php" method = "post">
+        <input type="submit"> 
+<?php 
+    } ?>
+
 
 
 
