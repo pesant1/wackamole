@@ -103,10 +103,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
             $sql = "UPDATE test2 SET name='Anony' where name ='Nully';";
             $result = mysqli_query($conn, $sql);         
         }
+
+        if(!empty($_POST) && $_SERVER['REQUEST_METHOD'] == 'POST'){
+            $data = $name;// processing codes here
+            unset $data;
+
+            $data = $nname;
+            unset $data;
+         }
     }
     mysqli_close($conn);
 ?>
-<form method="post" enctype="multipart/form-data" autocomplete="off">
+
 
 
 </body>
