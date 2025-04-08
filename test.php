@@ -88,23 +88,25 @@ table, th, td
     } ?>
 
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // collect value of input field
-    $name = $_POST['fname'];
-    $nname = $_POST['nname'];
-    if ($name) 
-        {
-            $sql = "UPDATE test2 SET name='$name' where name ='Nully';";
-            $result = mysqli_query($conn, $sql);        
-        }
-    elseif ((empty($name)) && (empty($nname)))
+if ($_SERVER["REQUEST_METHOD"] == "POST") 
     {
-        $sql = "UPDATE test2 SET name='Anony' where name ='Nully';";
-        $result = mysqli_query($conn, $sql);         
+        // collect value of input field
+        $name = $_POST['fname'];
+        $nname = $_POST['nname'];
+        if ($name) 
+            {
+                $sql = "UPDATE test2 SET name='$name' where name ='Nully';";
+                $result = mysqli_query($conn, $sql);        
+            }
+        elseif ((empty($name)) && (empty($nname)))
+        {
+            $sql = "UPDATE test2 SET name='Anony' where name ='Nully';";
+            $result = mysqli_query($conn, $sql);         
+        }
     }
-}
-mysqli_close($conn);
+    mysqli_close($conn);
 ?>
+<form method="post" enctype="multipart/form-data" autocomplete="off">
 
 
 </body>
