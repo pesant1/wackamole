@@ -106,11 +106,7 @@ table, th, td
 //    mysqli_close($conn);     
 ?>
 
-<?php if ($entry2 != $entry) 
-    { ?> 
-    <meta http-equiv="refresh" content="1" />  
-<?php 
-    } ?>
+
 
 </body>
 </html> 
