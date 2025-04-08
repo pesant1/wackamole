@@ -99,10 +99,7 @@ table, th, td
             }
         }
 
-        if(!empty($_POST) && $_SERVER['REQUEST_METHOD'] == 'POST'){
-            $data = $name; // processing codes here
-            unset $data;
-           }    
+        header("location: test.php");
     mysqli_close($conn);     
 ?>
 
