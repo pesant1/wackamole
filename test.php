@@ -77,13 +77,9 @@ table, th, td
 
 <?php if ($nully == "bob") 
     { ?> 
-        <form action="newname.php" method = "post">
-
-        <p> New entry detected changed name or stay anonymous? </p>
-        Enter your name: <input type="text" id="name" name="peoplename" />
-        <input type="submit" value="yes"> 
-        <br>
-        <input type="submit" value="no"> 
+        <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>"> 
+        </form>
+ 
 <?php 
     } ?>
 
