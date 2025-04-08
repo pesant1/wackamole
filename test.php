@@ -82,8 +82,8 @@ table, th, td
 
         <p> New entry detected changed name or stay anonymous? </p>
 
-        <input type="submit" name="yes"> 
-        <input type="submit" name="no"> 
+        <input type="submit" value="yes"> 
+        <input type="submit" value="no"> 
 <?php 
     } ?>
 
