@@ -29,8 +29,15 @@ table, th, td
         }
         
         $sql = "SELECT * FROM test2 ORDER BY score DESC;";
-        $result = mysqli_query($conn, $sql);       
+        $result = mysqli_query($conn, $sql);     
+        $res = 1;  
 ?>
+
+<?php if ($res == 1) 
+    { ?> 
+        <meta http-equiv="refresh" content="0" />
+<?php 
+    } ?>
 
 <table>
         <tr>
@@ -101,11 +108,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
-<?php if ($res == 1) 
-    { ?> 
-        <meta http-equiv="refresh" content="0" />
-<?php 
-    } ?>
 
 
 
