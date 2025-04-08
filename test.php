@@ -76,7 +76,7 @@ table, th, td
             $nully = "{$row["NAME"]}";
             if( $nully == 'bob')
             {
-                <form action="newname.php" method = "post">
+                <form action="newname.php" method = "post">;
                 ;
             } 
         }
