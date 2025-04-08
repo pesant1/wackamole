@@ -81,8 +81,6 @@ table, th, td
         <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>"> 
         Name: <input type="text" name="fname">
         <input type="submit">
-        <br>
-        <input type="submit" name="nname">
         </form>
 <?php 
     } ?>
@@ -92,19 +90,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     {
         // collect value of input field
         $name = $_POST['fname'];
-        if ($name) 
-            {
-                $sql = "UPDATE test2 SET name='$name' where name ='Nully';";
-                $result = mysqli_query($conn, $sql);        
-            }
-        else
-        {
+        if (empty($name)) {
             $sql = "UPDATE test2 SET name='Anony' where name ='Nully';";
-            $result = mysqli_query($conn, $sql);              
-        }    
+            $result = mysqli_query($conn, $sql);
+            $res = 1;
+        } else {
+            $sql = "UPDATE test2 SET name='$name' where name ='Nully';";
+            $result = mysqli_query($conn, $sql);
+            $res = 1;
+        }
     }
-    mysqli_close($conn);
 ?>
+
+
+
+
+
+
+ 
 
 
 
