@@ -76,10 +76,16 @@ table, th, td
             $nully = "{$row["NAME"]}";
  
         }
+
+        if( $nully == 'bob')
+        {
+          <form action="newname.php" method = "post">  
+        }
+
         mysqli_close($conn);
 ?>
 
-<form action="newname.php" method = "post">
+
 
 <meta http-equiv="refresh" content="5">
 
