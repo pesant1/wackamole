@@ -79,12 +79,13 @@ table, th, td
         mysqli_close($conn);
 
 ?>
+          <form method = "post" action = "newname.php">
+          <input type="text" name="name">
+        <input type="submit">
     <script>
         if( $nully == 'bob')
         {
-          <form method = "post" action "newname.php">
-          <input type="text" name="name">
-        <input type="submit">
+
         
           </form>  
         } 
