@@ -93,9 +93,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST['fname'];
     if (empty($name)) 
         {
-            $sql = "UPDATE test2 SET name='Anony' where name ='Nully';";
-            $result = mysqli_query($conn, $sql);
-        } 
+            $sql = "UPDATE test2 SET name='$name' where name ='Nully';";
+            $result = mysqli_query($conn, $sql);        
+        }
 }
 ?>
 
