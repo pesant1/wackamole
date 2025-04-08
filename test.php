@@ -68,14 +68,20 @@ table, th, td
 </table>
 
 <?php
-    $sql = "SELECT NAME FROM test2 WHERE NAME='Nully';";
+    $sql = "SELECT NAME FROM test2 WHERE name='bob';";
     $result = mysqli_query($conn, $sql);
 
-    if($result -> num_rows > 0) 
-    { 
-        //<form action="newname.php" method = "post">
-    }
-    mysqli_close($conn);
+        if($row = $result->fetch_assoc())
+        {
+            $nully = "{$row["NAME"]}";
+            hi          
+        }
+
+        if($nully == 'bob')
+        {
+            <form action="newname.php" method = "post">
+        }
+        mysqli_close($conn);
 ?>
 
 <meta http-equiv="refresh" content="5">
