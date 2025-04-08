@@ -103,7 +103,7 @@ table, th, td
             }
         }
 
-     
+     header('Location:'.$_SERVER['PHP_SELF']);
     mysqli_close($conn);     
 ?>
 
