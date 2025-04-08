@@ -28,8 +28,8 @@ table, th, td
             echo "Connected successfully";
         }
         
-        $entry = "SELECT name FROM test2 ORDER BY id DESC LIMIT 1;";
-        $result = mysqli_query($conn, $sql); 
+        //$entry = "SELECT name FROM test2 ORDER BY id DESC LIMIT 1;";
+        //$result = mysqli_query($conn, $sql); 
 
         $sql = "SELECT * FROM test2 ORDER BY score DESC;";
         $result = mysqli_query($conn, $sql);      
