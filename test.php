@@ -99,10 +99,14 @@ table, th, td
             }
         }
 
-
     mysqli_close($conn);     
 ?>
 
+<script>
+    window.onload = function() {
+        history.replaceState("", "", "/var/www/html/wackamole/test.php");
+    }
+</script>
 
 
 
