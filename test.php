@@ -82,6 +82,7 @@ table, th, td
         Name: <input type="text" name="fname">
         <input type="submit">
         </form>
+        <meta http-equiv="refresh" content="5" />    
 <?php 
     } ?>
 
@@ -93,20 +94,13 @@ table, th, td
             if (empty($name)) {
                 $sql = "UPDATE test2 SET name='Anony' where name ='Nully';";
                 $result = mysqli_query($conn, $sql);
-                <meta http-equiv="refresh" content="5" />
-                
             } else {
                 $sql = "UPDATE test2 SET name='$name' where name ='Nully';";
                 $result = mysqli_query($conn, $sql);
-                <meta http-equiv="refresh" content="5" />
             }
         }
-
-     
     mysqli_close($conn);     
 ?>
-
-
 
 </body>
 </html> 
