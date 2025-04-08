@@ -77,17 +77,15 @@ table, th, td
  
         }
 
+        mysqli_close($conn);
+?>
+    <script>
         if( $nully == 'bob')
         {
           <form action="newname.php" method = "post">
           </form>  
         }
-
-        mysqli_close($conn);
-?>
-
-
-
+    </script>
 <meta http-equiv="refresh" content="5">
 
 </body>
