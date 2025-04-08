@@ -82,7 +82,7 @@ table, th, td
         <p> New entry detected changed name or stay anonymous? </p>
         Enter your name: <input type="text" id="name" name="peoplename" />
         <input type="submit" value="yes"> 
-
+        <br>
         <input type="submit" value="no"> 
 <?php 
     } ?>
