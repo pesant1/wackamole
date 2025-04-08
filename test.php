@@ -79,6 +79,7 @@ table, th, td
 <?php if ($nully == "bob") 
     { ?> 
         <form action="newname.php" method = "post">
+        <input type="text" name="fname">
         <input type="submit"> 
 <?php 
     } ?>
