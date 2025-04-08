@@ -98,6 +98,11 @@ table, th, td
                 $result = mysqli_query($conn, $sql);
             }
         }
+
+        if(!empty($_POST) && $_SERVER['REQUEST_METHOD'] == 'POST'){
+            $data = $name; // processing codes here
+            unset $data;
+           }    
     mysqli_close($conn);     
 ?>
 
