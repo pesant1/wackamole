@@ -99,7 +99,7 @@ table, th, td
             }
         }
 
-        header("location: test.php");
+
     mysqli_close($conn);     
 ?>
 
