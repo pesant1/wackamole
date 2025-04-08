@@ -28,7 +28,6 @@ table, th, td
             echo "Connected successfully";
         }
         
-        //$sql = "SELECT * FROM test ORDER BY score DESC;";
         $sql = "SELECT * FROM test2 ORDER BY score DESC;";
         $result = mysqli_query($conn, $sql);       
 ?>
@@ -81,8 +80,9 @@ table, th, td
         <form action="newname.php" method = "post">
 
         <p> New entry detected changed name or stay anonymous? </p>
-
+        Enter your name: <input type="text" id="name" name="peoplename" /></p> 
         <input type="submit" value="yes"> 
+
         <input type="submit" value="no"> 
 <?php 
     } ?>
