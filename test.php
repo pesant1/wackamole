@@ -92,12 +92,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($name)) {
         $sql = "UPDATE test2 SET name='Anony' where name ='Nully';";
         $result = mysqli_query($conn, $sql);
+        $res = 1;
     } else {
         $sql = "UPDATE test2 SET name='$name' where name ='Nully';";
         $result = mysqli_query($conn, $sql);
+        $res = 1;
     }
 }
 ?>
+
+<?php if ($res == 1) 
+    { ?> 
+        <meta http-equiv="refresh" content="0" />
+<?php 
+    } ?>
 
 
 
