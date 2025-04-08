@@ -82,7 +82,7 @@ table, th, td
         Name: <input type="text" name="fname">
         <input type="submit">
         </form>
-        <meta http-equiv="refresh" content="5" />    
+        <meta http-equiv="refresh" content="1" />    
 <?php 
     } ?>
 
