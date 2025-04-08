@@ -76,7 +76,7 @@ table, th, td
             $nully = "{$row["NAME"]}";
             if( $nully == 'bob')
             {
-                echo "yo mama"
+                <form action="newname.php" method = "post">
                 ;
             } 
         }
