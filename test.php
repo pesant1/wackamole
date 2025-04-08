@@ -76,7 +76,7 @@ table, th, td
             $nully = "{$row["NAME"]}";
             if( $nully == 'bob')
             {
-                dfdsfjdsl
+                echo "yo mama"
                 ;
             } 
         }
