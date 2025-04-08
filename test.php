@@ -93,26 +93,16 @@ table, th, td
             if (empty($name)) {
                 $sql = "UPDATE test2 SET name='Anony' where name ='Nully';";
                 $result = mysqli_query($conn, $sql);
+                
             } else {
                 $sql = "UPDATE test2 SET name='$name' where name ='Nully';";
                 $result = mysqli_query($conn, $sql);
             }
         }
 
+        unset($_POST)
     mysqli_close($conn);     
 ?>
-
-<script>
-    window.onload = function() {
-        history.replaceState("", "", "/var/www/html/wackamole/test.php");
-    }
-</script>
-
-
-
-
-
- 
 
 
 
