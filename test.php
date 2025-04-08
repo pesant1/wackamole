@@ -34,8 +34,10 @@ table, th, td
 ?>
 
 <?php if ($res == 1) 
+    $res = 0;
     { ?> 
         <meta http-equiv="refresh" content="0" />
+        
 <?php 
     } ?>
 
