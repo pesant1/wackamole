@@ -84,6 +84,7 @@ table, th, td
         {
           <form 
                 action="newname.php" method = "post">
+                stay anon or input name?
           </form>  
         }
         
