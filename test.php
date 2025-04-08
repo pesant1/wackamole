@@ -74,23 +74,19 @@ table, th, td
         if($row = $result->fetch_assoc())
         {
             $nully = "{$row["NAME"]}";
- 
         }
 
-        mysqli_close($conn);
-?>
-    <script>
         if( $nully == 'bob')
         {
-          <form 
-                action="newname.php" method = "post">
-                stay anon or input name?
-          </form>  
+            ;
         }
-        
-    </script>
+        mysqli_close($conn);
+?>
 
-<button type="submit" form="nameform" value="Submit">Submit</button>   
+
+
+<button type="submit" form="nameform" value="Submit">Submit</button>  
+
 <meta http-equiv="refresh" content="5">
 
 </body>
