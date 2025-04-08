@@ -100,7 +100,7 @@ table, th, td
             }
         }
 
-   
+        unset($_POST)
     mysqli_close($conn);     
 ?>
 
