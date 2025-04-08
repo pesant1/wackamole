@@ -84,10 +84,9 @@ table, th, td
         {
           <form 
                 action="newname.php" method = "post">
-                <button type="submit" form="nameform" value="Submit">Submit</button>
-
           </form>  
         }
+        <button type="submit" form="nameform" value="Submit">Submit</button>    
     </script>
 <meta http-equiv="refresh" content="5">
 
