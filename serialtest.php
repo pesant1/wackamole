@@ -27,8 +27,7 @@
                 
                 if($data)
                 {
-                        $data = trim($data);
-                        //$sql = "INSERT INTO test (name, score) VALUES ('NULLY', $data);";            
+                        $data = trim($data);           
                         $sql = "INSERT INTO test2 (name, score, month, day, time, zone) VALUES ('NULLY', $data, '$mo', $day, '$time', '$zone');"; 
                         $result = mysqli_query($conn, $sql);                                
                 }
