@@ -81,8 +81,7 @@ table, th, td
         <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>"> 
         Name: <input type="text" name="fname">
         <input type="submit">
-        </form>
-        <meta http-equiv="refresh" content="1" />    
+        </form>   
 <?php 
     } ?>
 
@@ -94,6 +93,7 @@ table, th, td
             if (empty($name)) {
                 $sql = "UPDATE test2 SET name='Anony' where name ='Nully';";
                 $result = mysqli_query($conn, $sql);
+                
             } else {
                 $sql = "UPDATE test2 SET name='$name' where name ='Nully';";
                 $result = mysqli_query($conn, $sql);
