@@ -77,13 +77,27 @@ table, th, td
 
 <?php if ($nully == "bob") 
     { ?> 
+        <p?> New entry detected, put your name? </p>
         <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>"> 
+        Name: <input type="text" name="fname">
+        <input type="submit">
         </form>
- 
 <?php 
     } ?>
 
-
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // collect value of input field
+    $name = $_POST['fname'];
+    if (empty($name)) {
+        $sql = "UPDATE test2 SET name='Anony' where name ='bob';";
+        $result = mysqli_query($conn, $sql);
+    } else {
+        $sql = "UPDATE test2 SET name='$name' where name ='bob';";
+        $result = mysqli_query($conn, $sql);
+    }
+}
+?>
 
 
 
