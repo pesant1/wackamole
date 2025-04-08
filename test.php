@@ -76,11 +76,14 @@ table, th, td
         } 
 ?>
 
-<?php if ($nully == "shahs") 
+<?php if ($nully == "bob") 
     { ?> 
         <form action="newname.php" method = "post">
-        <input type="text" name="fname">
-        <input type="submit"> 
+
+        <p> New entry detected changed name or stay anonymous? </p>
+
+        <input type="submit" name="yes"> 
+        <input type="submit" name="no"> 
 <?php 
     } ?>
 
