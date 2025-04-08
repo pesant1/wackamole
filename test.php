@@ -91,7 +91,7 @@ table, th, td
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // collect value of input field
     $name = $_POST['fname'];
-    if (empty($name)) 
+    if ($name) 
         {
             $sql = "UPDATE test2 SET name='$name' where name ='Nully';";
             $result = mysqli_query($conn, $sql);        
