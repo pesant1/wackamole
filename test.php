@@ -102,15 +102,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $result = mysqli_query($conn, $sql);         
     }
 }
+mysqli_close($conn);
 ?>
-
-
-
-
-
-
- 
-
 
 
 </body>
