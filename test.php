@@ -29,17 +29,10 @@ table, th, td
         }
         
         $sql = "SELECT * FROM test2 ORDER BY score DESC;";
-        $result = mysqli_query($conn, $sql);     
-        $res = 1;  
+        $result = mysqli_query($conn, $sql);      
 ?>
 
-<?php if ($res == 1) 
-    $res = 0;
-    { ?> 
-        <meta http-equiv="refresh" content="0" />
-        
-<?php 
-    } ?>
+
 
 <table>
         <tr>
