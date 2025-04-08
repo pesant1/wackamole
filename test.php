@@ -79,7 +79,8 @@ table, th, td
 
         if( $nully == 'bob')
         {
-          <form action="newname.php" method = "post">  
+          <form action="newname.php" method = "post">
+          </form>  
         }
 
         mysqli_close($conn);
