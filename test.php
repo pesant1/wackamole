@@ -80,7 +80,7 @@ table, th, td
         <form action="newname.php" method = "post">
 
         <p> New entry detected changed name or stay anonymous? </p>
-        Enter your name: <input type="text" id="name" name="peoplename" /></p> 
+        Enter your name: <input type="text" id="name" name="peoplename" />
         <input type="submit" value="yes"> 
 
         <input type="submit" value="no"> 
