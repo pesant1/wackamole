@@ -74,10 +74,8 @@ table, th, td
         if($row = $result->fetch_assoc())
         {
             $nully = "{$row["NAME"]}";
-            
+            hi   
         }
-
-
         mysqli_close($conn);
 ?>
 
