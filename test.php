@@ -82,7 +82,10 @@ table, th, td
     <script>
         if( $nully == 'bob')
         {
-          <form action="newname.php" method = "post">
+          <form 
+                action="newname.php" method = "post">
+                <button type="submit" form="nameform" value="Submit">Submit</button>
+
           </form>  
         }
     </script>
