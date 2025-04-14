@@ -100,12 +100,10 @@ table, th, td
                 $sql = "UPDATE test2 SET name='$name' where name ='Nully';";
                 $result = mysqli_query($conn, $sql);
             }
+            unset ($name);
         }
         $entry2 = "SELECT name FROM test2 ORDER BY id DESC LIMIT 1;";
         $result = mysqli_query($conn, $sql);        
-        if(!empty($_POST) && $_SERVER['REQUEST_METHOD'] == 'POST'){
-            unset ($name);
-           }
         mysqli_close($conn);  
 
 ?>
