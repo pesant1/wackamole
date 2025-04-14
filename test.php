@@ -93,15 +93,15 @@ table, th, td
         {
             // collect value of input field
             $name = $_POST['fname'];
-            if (empty($name)) {
-                $sql = "UPDATE test2 SET name='Anony' where name ='Nully';";
-                $result = mysqli_query($conn, $sql);
-            } else {
+            if ($name) 
+            {
                 $sql = "UPDATE test2 SET name='$name' where name ='Nully';";
                 $result = mysqli_query($conn, $sql);
+            } else 
+            {
+                $sql = "UPDATE test2 SET name='Anony' where name ='Nully';";
+                $result = mysqli_query($conn, $sql);                
             }
-            //unset($_POST);
-            //header("Refresh:0");
             header("Location: test.php", true, 303);
         }   
         mysqli_close($conn);
