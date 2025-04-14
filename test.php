@@ -15,7 +15,6 @@ table, th, td
 <h1>Test file to display db content</h1>
 
 <?php
-        ob_start();
         $server = "localhost";
         $username = "php";
         $password = "php1";
@@ -97,20 +96,14 @@ table, th, td
             if (empty($name)) {
                 $sql = "UPDATE test2 SET name='Anony' where name ='Nully';";
                 $result = mysqli_query($conn, $sql);
-                
-                
             } else {
                 $sql = "UPDATE test2 SET name='$name' where name ='Nully';";
                 $result = mysqli_query($conn, $sql);
-
             }
-
+            header("Refresh:0");
         }   
-        header('test.php');
         mysqli_close($conn);
 ?>
-
-
 
 </body>
 </html> 
