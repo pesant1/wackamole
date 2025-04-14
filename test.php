@@ -102,7 +102,7 @@ table, th, td
                 $result = mysqli_query($conn, $sql);
             } elseif(empty($name) || (empty($nname))) 
             {
-                $sql = "UPDATE test2 SET name='Anony' where name ='Nully';";
+                $sql = "UPDATE test2 SET name='Anonymous' where name ='Nully';";
                 $result = mysqli_query($conn, $sql);                
             }
             header("Location: test.php", true, 303);
