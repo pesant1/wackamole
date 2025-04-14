@@ -95,12 +95,15 @@ table, th, td
             if (empty($name)) {
                 $sql = "UPDATE test2 SET name='Anony' where name ='Nully';";
                 $result = mysqli_query($conn, $sql);
+                unset ($name);
                 
             } else {
                 $sql = "UPDATE test2 SET name='$name' where name ='Nully';";
                 $result = mysqli_query($conn, $sql);
+                unset ($name);
             }
             unset ($name);
+
         }
         $entry2 = "SELECT name FROM test2 ORDER BY id DESC LIMIT 1;";
         $result = mysqli_query($conn, $sql);        
