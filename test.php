@@ -103,7 +103,7 @@ table, th, td
         }
         $entry2 = "SELECT name FROM test2 ORDER BY id DESC LIMIT 1;";
         $result = mysqli_query($conn, $sql);        
-        mysqli_close($conn);  
+        //mysqli_close($conn);  
 
 ?>
 
