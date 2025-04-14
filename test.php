@@ -15,15 +15,13 @@ table, th, td
 <h1>Test file to display db content</h1>
 
 <?php
-ob_start();
-?>
-
-<?php
+        ob_start();
         $server = "localhost";
         $username = "php";
         $password = "php1";
         $database = "finalproject";
         $conn = mysqli_connect($server, $username, $password, $database);
+        
 
         //Connection checker
         if (!$conn)
