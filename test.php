@@ -100,6 +100,8 @@ table, th, td
                 $sql = "UPDATE test2 SET name='$name' where name ='Nully';";
                 $result = mysqli_query($conn, $sql);
             }
+            //unset($_POST);
+            //header("Refresh:0");
             header("Location: test.php", true, 303);
         }   
         mysqli_close($conn);
