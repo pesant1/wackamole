@@ -15,6 +15,10 @@ table, th, td
 <h1>Test file to display db content</h1>
 
 <?php
+ob_start();
+?>
+
+<?php
         $server = "localhost";
         $username = "php";
         $password = "php1";
