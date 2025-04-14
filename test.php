@@ -84,6 +84,7 @@ table, th, td
         <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>"> 
         Name: <input type="text" name="fname">
         <input type="submit">
+        <input type="submit" name="fname">
         </form>   
 <?php 
     } ?>
