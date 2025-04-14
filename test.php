@@ -75,7 +75,6 @@ table, th, td
         if($row = $result->fetch_assoc())
         {
             $nully = "{$row["NAME"]}";
-            header("Refresh:0");
         } 
 ?>
 
