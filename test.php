@@ -103,7 +103,9 @@ table, th, td
         }
         $entry2 = "SELECT name FROM test2 ORDER BY id DESC LIMIT 1;";
         $result = mysqli_query($conn, $sql);        
-//    mysqli_close($conn);     
+    header("Location: ". $_SERVER['PHP_SELF']);
+        mysqli_close($conn);  
+
 ?>
 
 
