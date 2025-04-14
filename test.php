@@ -99,7 +99,7 @@ ob_start();
             if (empty($name)) {
                 $sql = "UPDATE test2 SET name='Anony' where name ='Nully';";
                 $result = mysqli_query($conn, $sql);
-                header('test.php');
+                
                 
             } else {
                 $sql = "UPDATE test2 SET name='$name' where name ='Nully';";
@@ -108,8 +108,8 @@ ob_start();
             }
 
         }   
-        mysqli_close($conn);  
-
+        header('test.php');
+        mysqli_close($conn);
 ?>
 
 
